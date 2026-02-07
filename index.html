@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harakatlanuvchi Zarrachalar | Hand Tracking</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- MediaPipe dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="app">
+        <canvas id="particleCanvas"></canvas>
+        <video id="inputVideo" playsinline style="display: none;"></video>
+
+        <div id="ui-overlay">
+            <h1 class="title">Hand Particle VR</h1>
+            <div class="instructions">
+                <p>O'ng qo'l: Zarrachalarni boshqarish</p>
+                <p>Chap qo'l: Kengaytirish va qisish</p>
+                <p>Ikkita barmoq: ❤️ Yurak | O'rta barmoq: 🔥 FUCK</p>
+            </div>
+            <div class="credit">Sayt @secureXXX tomonidan yaratildi</div>
+        </div>
+
+        <div id="status">Kamera yuklanmoqda...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
